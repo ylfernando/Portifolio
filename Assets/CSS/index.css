@@ -57,6 +57,9 @@ nav, ul {
     width: 35px;
     margin: 9px 0px;
 }
+.menu-header-mobile {
+    display: none;
+}
 /**** Responsivo ****/
 @media only screen and (max-width:830px) {
     .ul-header {
@@ -67,5 +70,35 @@ nav, ul {
         display: block;
         justify-content: center;
         align-items: center;
+    }
+    .nav-mobile, ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-mobile, a {
+        color: #FFF;
+        text-decoration: none;
+    }
+    .nav-mobile, .li-header-mobile {
+        padding: 10px 15px;
+        border-bottom: 1px solid #FFF;
+        border-radius: 1px;
+    }
+    .menu-header-mobile {
+        display: none;
+        position: absolute;
+        justify-content: center;
+        background-color: #323297;
+        top: 111px;
+        width: 100%;
+        transition: height 0.5s;
+    }
+    .li-header-mobile a {
+        font-size: 20px;
+        transition: all ease 0.4s;
+    }
+    .li-header-mobile a:hover {
+        color: #0a0a4c;
     }
 }
