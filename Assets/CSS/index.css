@@ -75,12 +75,14 @@ nav, ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        text-align: center;
     }
     .nav-mobile, a {
         color: #FFF;
         text-decoration: none;
     }
     .nav-mobile, .li-header-mobile {
+        margin: 5px;
         padding: 10px 15px;
         border-bottom: 1px solid #FFF;
         border-radius: 1px;
