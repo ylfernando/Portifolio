@@ -75,7 +75,6 @@ nav, ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: center;
     }
     .nav-mobile, a {
         color: #FFF;
@@ -84,8 +83,7 @@ nav, ul {
     .nav-mobile, .li-header-mobile {
         margin: 5px;
         padding: 10px 15px;
-        border-bottom: 1px solid #FFF;
-        border-radius: 1px;
+        align-items: center;
     }
     .menu-header-mobile {
         display: none;
@@ -94,13 +92,29 @@ nav, ul {
         background-color: #323297;
         top: 111px;
         width: 100%;
-        transition: height 0.5s;
     }
     .li-header-mobile a {
-        font-size: 20px;
+        font-size: 19px;
         transition: all ease 0.4s;
+        display: inline-block;
     }
-    .li-header-mobile a:hover {
+    .li-header-mobile a:after {
+        display:block;
+        content: '';
+        border-bottom: solid 3px #019fb6;  
+        transform: scaleX(0);  
+        transition: transform 250ms ease-in-out
+    }
+    .li-header-mobile a:hover:after {
+        transform: scaleX(1);
+    }
+
+
+
+
+    /*.li-header-mobile a:hover{
+        border:1px solid #FFF;
+        width: 100%;
         color: #0a0a4c;
-    }
+    }*/
 }
