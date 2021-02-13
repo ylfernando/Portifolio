@@ -7,3 +7,18 @@ function menuMobile() {
 		x.style.display = 'block';
 	}
 }
+
+
+function letreiro(elemento) {
+	const textArray = elemento.innerHTML.split('');
+	elemento.innerHTML = '';
+	textArray.forEach((letra, i) => {
+		setTimeout(() => {
+			elemento.innerHTML += letra;
+		}, 300 * i);
+	});
+
+}
+
+const texto = document.querySelector('.p-active');
+letreiro(texto);
