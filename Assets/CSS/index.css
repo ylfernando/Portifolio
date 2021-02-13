@@ -84,23 +84,82 @@ nav, ul {
     height: auto;
     padding: 10px 0px 10px 0px;
 }
-.sobre-content {
+.info-content {
     padding: 20px!important;
 }
-.h1-nome-sobre {
+.h1-nome-info {
     font-size: 45px;
     font-weight: bold;
     color: #FFF;
 }
-.p-sobre-area {
+.p-info-area {
     margin-top: 12px;
 }
-.p-sobre, .p-active {
-    font-size: 22px;
+.p-info, .p-active {
+    font-size: 20px;
     margin-top: 7px;
     color: #FFF;
+    font-weight: 200;
+    font-style: italic;
+}
+/**** Article ****/
+.article {
+    height: 400px;
+    margin-top: 1.5px;
+    background-image: linear-gradient(to bottom, #11114A, #323297);
+}
+.container-article {
+    height: auto;
+    padding: 10px 0px 10px 0px;
+}
+.sobre-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.h1-sobre-title {
+    font-size: 45px;
+    font-weight: bold;
+    color: #FFF;
+    margin-left: 10px;
+}
+.square {
+    width: 30px;
+    height: 30px;
+    background-color: #019fb6;
+    padding-top: 10px;
+}
+.sobre-content {
+    margin-top: 10px;
+    height: auto;
+    padding: 20px!important;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.foto-area {
+    width: 500px;
+}
+.img-sobre {
+    width: 300px;
+    justify-content: unset;
+    border-radius: 200%;
+    border: 2px solid #019fb6;
+}
+.p-sobre-info {
+    font-size: 18.5px;
+    width: 680px;
+    margin-top: 7px;
+    color: #FFF;
+    font-weight: 200;
+    font-style: italic;
+}
+.bolder {
+    font-weight: 800!important;
 }
 /**** Responsivo ****/
+
 @media only screen and (max-width:830px) {
     .ul-header {
         display: none;

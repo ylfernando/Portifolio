@@ -15,7 +15,7 @@ function letreiro(elemento) {
 	textArray.forEach((letra, i) => {
 		setTimeout(() => {
 			elemento.innerHTML += letra;
-		}, 300 * i);
+		}, 200 * i);
 	});
 
 }
