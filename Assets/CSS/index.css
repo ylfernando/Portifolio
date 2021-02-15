@@ -7,6 +7,9 @@ body {
     background-color: #FFF;
     font-family: 'Lato', Arial, Helvetica, sans-serif!important;
 }
+.mt-20 {
+    margin-top: 20px!important;
+}
 /**** Header ****/
 .header {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif!important;
@@ -145,11 +148,11 @@ nav, ul {
     width: 300px;
     justify-content: unset;
     border-radius: 200%;
-    border: 2px solid #019fb6;
+   /*border: 2px solid #019fb6;*/
 }
 .p-sobre-info {
     font-size: 18.5px;
-    width: 680px;
+    max-width: 680px;
     margin-top: 7px;
     color: #FFF;
     font-weight: 200;
