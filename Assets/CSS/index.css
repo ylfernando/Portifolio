@@ -107,7 +107,7 @@ nav, ul {
 }
 /**** Article ****/
 .article {
-    height: 400px;
+    height: 475px;
     margin-top: 1.5px;
     background-image: linear-gradient(to bottom, #11114A, #323297);
 }
@@ -209,6 +209,28 @@ nav, ul {
     }
     .li-header-mobile a:hover:after {
         transform: scaleX(1);
+    }
+    .p-info, .p-active {
+        font-size: 18px;
+    }
+    .h1-nome-sobre {
+        font-size: 40px;
+    }
+    .article {
+        padding-top: 30px;
+        height: 800px;
+    }
+    .sobre-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .foto-area {
+        margin: 15px 0px 15px 0px;
+        width: unset;
+    }
+    .sobre-info {
+        margin-top: 15px;
     }
 }
 
