@@ -114,6 +114,7 @@ nav, ul {
 .container-article {
     height: auto;
     padding: 10px 0px 10px 0px;
+    max-width: 1250px;
 }
 .sobre-title {
     display: flex;
@@ -160,6 +161,43 @@ nav, ul {
 }
 .bolder {
     font-weight: 800!important;
+}
+/**** Section-serviços ****/
+
+.section-servicos {
+    height: 300px;
+    margin-top: 1.5px;
+    background-image: linear-gradient(to top, #11114A, #323297);
+}
+.servicos-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.container-servicos {
+    height: auto;
+    padding: 10px 0px 10px 0px;
+    max-width: 1250px;
+}
+.h1-servicos-title {
+    font-size: 45px;
+    font-weight: bold;
+    color: #FFF;
+    margin-left: 10px;
+}
+.servicos-area {
+    padding: 20px!important;
+    max-width: 1250px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.servicos-content {
+    margin-top: 7px;
+    max-width: 400px!important;
 }
 /**** Responsivo ****/
 
@@ -238,7 +276,7 @@ nav, ul {
     .container-section {
         align-items: center;
     }
-    .h1-nome-sobre {
+    .h1-nome-sobre, .h1-servicos-title {
         font-size: 35px;
     }
     .p-sobre, .p-active {
