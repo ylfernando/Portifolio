@@ -295,13 +295,16 @@ nav, ul {
     .sobre-info {
         margin-top: 15px;
     }
+    .section-servicos {
+        height: auto!important;
+    }
 }
 
 @media only screen and (max-width: 375px) {
     .container-section {
         align-items: center;
     }
-    .h1-nome-sobre, .h1-servicos-title {
+    .h1-nome-sobre {
         font-size: 35px;
     }
     .p-sobre, .p-active {
@@ -310,12 +313,19 @@ nav, ul {
 }
 
 @media only screen and (max-width: 350px) {
+    .title-servicos-content {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .h1-servicos-content {
+        color: #FFF;
+        font-size: 25px;
+    }
     .logo {
         margin-left: 15px;
-        max-width: 220px;
     }
     .logo-header {
-        width: 120%;
+        width: 100%;
     }
     .menu-mobile {
         margin-right: 4px;
@@ -323,7 +333,7 @@ nav, ul {
     .img-sobre {
         width: 275px;
     }
-    .p-sobre-info {
+    .p-sobre-info, .p-servicos-content {
         font-size: 17px;
     }
 
