@@ -10,6 +10,9 @@ body {
 .mt-20 {
     margin-top: 20px!important;
 }
+.p-20 {
+    padding: 20px!important;
+}
 /**** Header ****/
 .header {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif!important;
@@ -224,6 +227,82 @@ nav, ul {
     text-align: center;
     width: 27%;
 }
+/**** Section projetos ****/
+
+.section-projetos {
+    height: 600px;
+    background-image: linear-gradient(to bottom, #11114A, #323297);
+    margin-top: 1.5px;
+}
+.container-projetos {
+    height: auto;
+    padding: 10px 0px 10px 0px;
+    max-width: 1250px;
+}
+.projetos-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h1-projetos-title {
+    font-size: 45px;
+    font-weight: bold;
+    color: #FFF;
+    margin-left: 10px;
+}
+.h1-projeto-type {
+    cursor: pointer;
+    transition: all ease 0.4s;
+    display: inline-block;
+    font-size: 30px;
+    color: #FFF;
+}
+.h1-projeto-type::after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #019fb6;
+    margin-top: 6px;
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out
+}
+.h1-projeto-type:hover::after {
+    transform: scaleX(1);
+}
+.projetos-area {
+    padding: 20px!important;
+    max-width: 1250px!important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.projeto-title-type {
+    margin-top: 25px;
+}
+.projeto-content {
+    padding: 20px 0px 20px 0px;
+    height: 500px;
+    max-width: 250px!important;
+    width: 23%;
+    border: 3px solid #019fb6;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+.projeto-image {
+    text-align: center;
+    max-width: 250px!important;
+    cursor: pointer;
+}
+.img-projeto {
+    border-radius: 3px;
+    width: 100%;
+}
+.h1-projeto-title {
+    color: #FFF;
+    font-size: 30px;
+}
 /**** Responsivo ****/
 
 @media only screen and (max-width:830px) {
@@ -295,6 +374,9 @@ nav, ul {
     .sobre-info {
         margin-top: 15px;
     }
+    .logo {
+        max-width: unset;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -318,13 +400,6 @@ nav, ul {
         color: #FFF;
         font-size: 25px;
     }
-    .logo img {
-        max-width: 292px!important;
-        margin-left: 15px;
-    }
-    .logo-header {
-        width: 100%;
-    }
     .menu-mobile {
         margin-right: 15px;
     }
@@ -336,10 +411,5 @@ nav, ul {
     }
 }
 @media only screen and (max-width: 340px) {
-    .logo img {
-        max-width: 300px!important;
-    }
-    .logo-header {
-        width: 100%;
-    }
+
 }
