@@ -279,8 +279,9 @@ nav, ul {
     margin-top: 25px;
 }
 .projeto-content {
-    padding: 20px 0px 20px 0px;
-    height: 500px;
+    padding: 30px 0px 20px 0px;
+    height: 420px;
+    max-height: 420px!important;
     max-width: 250px!important;
     width: 23%;
     border-bottom: 1px solid #019fb6;
@@ -300,7 +301,7 @@ nav, ul {
 }
 .img-projeto {
     border-radius: 3px;
-    width: 100%;
+    /*width: 100%;*/
 }
 .projeto-title {
     text-align: center;
