@@ -333,6 +333,119 @@ nav, ul {
     color: #FFF;
     font-size: 17.5px;
 }
+
+/**** Section contato ****/
+.section-contato {
+    height: 320px;
+    background-image: linear-gradient(to bottom , #323297, #11114A);
+    margin-top: 1.5px;
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1250px;
+    height: auto;
+    padding: 10px 0px 10px 0px;
+}
+.contato-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.h1-contato-title {
+    font-size: 45px;
+    font-weight: bold;
+    color: #FFF;
+    margin-left: 10px;
+}
+.p-contato {
+    font-size: 28px;
+    padding-top: 25px;
+    color: #FFF;
+}
+.contato-area {
+    max-width: 730px!important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.btn-contato {
+    max-width: 730px!important;
+    margin-top: 35px;
+    border-radius: 5px;
+    border: 1px solid #11114A;
+    background-color: #323297;
+    text-align: center;
+    height: 70px;
+    width: 350px;
+    cursor: pointer;
+    transition: all ease 0.7s;
+}
+.btn-contato > a {
+    font-size: 19px;
+    line-height: 70px;
+    color: #FFF;
+    text-decoration: none;
+}
+.btn-contato:hover {
+    background-color: #3939ad;
+    border: 1px solid #323297;
+}
+/**** Footer ****/
+.footer {
+    padding: 20px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif!important;
+    height: auto;
+    margin-top: 1px;
+    background-image: linear-gradient(to bottom, #11114A, #323297);
+    display: flex;
+    align-items: center;
+    justify-content: space-around!important;
+}
+.p-copy {
+    color: #FFF;
+}
+.center {
+    text-align: center!important;
+}
+.ul-footer {
+    display: flex;
+    flex-direction: column;
+}
+.li-footer a {
+    color: #FFF;
+    text-decoration: none;
+}
+.li-footer a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #FFF;
+    margin: 0px 20px;
+    transition: all ease 0.4s;
+    display: inline-block;
+}
+.li-footer a::after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #019fb6;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out
+}
+.li-footer a:hover::after {
+    transform: scaleX(1);
+}
+.h2-footer {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+}
 /**** Responsivo ****/
 
 @media only screen and (max-width:830px) {
@@ -423,7 +536,44 @@ nav, ul {
         width: 100%;
     }
 }
+@media only screen and (max-width:699px) {
+    .p-contato {
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:768px) {
+    .footer {
+        display: flex;
+        flex-wrap: wrap!important;
+        align-items: center;
+        padding-top: 25px;
+    }
+    .h2-footer {
+        text-align: center;
+        font-size: 25px;
+    }
+    .menu-footer {
+        margin-top: 30px;
+    }
+    .p-copy {
+        font-size: 16.5px;
+    }
+}
+@media only screen and (max-width: 490px) {
+    .p-contato {
+        font-size: 21px;
+    }
+    .btn-contato {
+        height: 45px;
+    }
+    .btn-contato > a {
+        font-size: 16px;
+        line-height: 45px;
+        color: #FFF;
+        text-decoration: none;
+    }
 
+}
 @media only screen and (max-width: 375px) {
     .container-section {
         align-items: center;
