@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth!important;
+}
 body {
     background-color: #FFF;
     font-family: 'Lato', Arial, Helvetica, sans-serif!important;
